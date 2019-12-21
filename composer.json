@@ -12,9 +12,9 @@
     ],
     "require": {
         "php":">=7.0",
-        "darkfriend/php5-debug": "*",
-        "darkfriend/php5-string": "*",
-        "darkfriend/php5-array": "*"
+        "darkfriend/php7-debug": "*",
+        "darkfriend/php7-string": "*",
+        "darkfriend/php7-array": "*"
     },
     "autoload": {
         "classmap":[
