@@ -1,0 +1,25 @@
+{
+    "name": "darkfriend/php7-curl",
+    "type": "library",
+    "description": "PHP7 curl helper",
+    "keywords": ["dev","curl","helper","darkfriend","development","php7","php"],
+    "homepage": "https://github.com/darkfriend/php7-curl",
+    "authors": [
+        {
+            "name": "darkfriend",
+            "email": "hi@darkfriend.ru"
+        }
+    ],
+    "require": {
+        "php":">=7.0",
+        "darkfriend/php5-debug": "*",
+        "darkfriend/php5-string": "*",
+        "darkfriend/php5-array": "*"
+    },
+    "autoload": {
+        "classmap":[
+            "./CurlHelper.php",
+            "./Curl.php"
+        ]
+    }
+}
