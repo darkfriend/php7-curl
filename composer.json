@@ -14,7 +14,8 @@
         "php":">=7.0",
         "darkfriend/php7-debug": "*",
         "darkfriend/php7-string": "*",
-        "darkfriend/php7-array": "*"
+        "darkfriend/php7-array": "*",
+        "darkfriend/php7-xml": "^1.0"
     },
     "autoload": {
         "classmap":[

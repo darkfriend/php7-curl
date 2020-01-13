@@ -3,6 +3,23 @@
 * ```CurlHelper::getInstance($newSession = false, $options = [])``` - return instance CurlHelper
 * ```CurlHelper::getInstance($newSession = false, $options = [])->request($url, $data = [], $method = 'post', $requestType = '', $responseType = 'json')``` - do request to url
 
+### Support request method type
+* post
+* get
+* put
+* delete
+* options
+* custom
+
+### Support request type
+* json
+* xml
+* custom
+
+### Support response type
+* json
+* xml
+* custom
 
 ## Example1
 
