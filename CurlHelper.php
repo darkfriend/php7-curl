@@ -276,15 +276,18 @@ class CurlHelper
         }
         \curl_setopt($this->_ch, \CURLOPT_URL, $url);
 
-        switch ($requestType) {
-            case 'json':
-                $this->headers['Content-Type'] = 'application/json; charset=utf-8';
-                break;
-            case 'xml':
-                $this->headers['Content-Type'] = 'text/xml';
-                break;
-            default: $this->headers['Content-Type'] = "$requestType; charset=utf-8";
+        if($requestType) {
+            switch ($requestType) {
+                case 'json':
+                    $this->headers['Content-Type'] = 'application/json; charset=utf-8';
+                    break;
+                case 'xml':
+                    $this->headers['Content-Type'] = 'text/xml';
+                    break;
+                default: $this->headers['Content-Type'] = "$requestType; charset=utf-8";
+            }
         }
+
 
         $this->initHeaders();
 
@@ -328,7 +331,7 @@ class CurlHelper
 
         $body = trim($body);
         if(strlen($body)>0) {
-            switch ($requestType) {
+            switch ($responseType) {
                 case 'json':
                     $body = \json_decode($body, true);
                     break;
