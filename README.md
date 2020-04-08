@@ -1,5 +1,7 @@
 # CurlHelper - хелпер для удобной работы с CURL
 
+``composer require darkfriend/php7-curl``
+
 * ```CurlHelper::getInstance($newSession = false, $options = [])``` - return instance CurlHelper
 * ```CurlHelper::getInstance($newSession = false, $options = [])->request($url, $data = [], $method = 'post', $requestType = '', $responseType = 'json')``` - do request to url
 
