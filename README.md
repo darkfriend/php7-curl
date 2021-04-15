@@ -11,6 +11,7 @@
 * put
 * delete
 * options
+* head
 * custom
 
 ### Support request type

@@ -228,7 +228,7 @@ class CurlHelper
                     \curl_setopt($this->_ch, \CURLOPT_POST, 1);
                     break;
                 default:
-                    \curl_setopt($this->_ch, \CURLOPT_CUSTOMREQUEST, $method);
+                    \curl_setopt($this->_ch, \CURLOPT_CUSTOMREQUEST, \strtoupper($method));
                     break;
             }
             \curl_setopt($this->_ch, \CURLOPT_HEADER, 1);
